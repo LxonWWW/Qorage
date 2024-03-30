@@ -1,0 +1,173 @@
+@import url('./lib/fonts/poppins/poppins.css');
+
+:root {
+    --main-background-color: #0E1114;
+    --main-font-color: #ffffff;
+
+    --main-input-background-color: #c2c2c2;
+    --main-input-border-color: #d6d6d6;
+
+    --main-dialog-background-color: #1f2937;
+    --main-dialog-font-color: var(--main-font-color);
+    --main-dialog-button-color: #222222;
+    --main-dialog-danger-button-color: #dc3545;
+
+    --main-sidebar-background-color: #1f2937;
+    --main-sidebar-font-color: #ffffff;
+
+    --main-users-table-background-color: var(--main-sidebar-background-color) !important;
+    --main-users-table-border-color: #999999;
+    --main-users-table-row-odd-background-color: #333a45;
+    --main-users-table-row-even-background-color: #232c3a;
+    --main-users-table-font-color: var(--main-font-color);
+}
+
+body {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+#main_content {
+	padding-left: 0px !important;
+	margin: auto !important;
+	margin-top: 50px !important;
+	width: 80% !important;
+	text-align: center !important;
+	color: var(--main-font-color) !important;
+	font-family: 'Poppins', sans-serif !important;
+}
+
+#main_form {
+    width: 50%;
+    height: 55%;
+    margin: auto;
+    margin-top: 45px;
+    border-radius: 8px;
+}
+
+.button {
+    width: 185px;
+    height: 40px;
+    font-size: 100%;
+    background-color: var(--main-sidebar-background-color);
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    cursor: pointer !important;
+}
+
+.button_danger {
+    width: 185px;
+    height: 40px;
+    font-size: 100%;
+    background-color: var(--main-dialog-danger-button-color);
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    cursor: pointer !important;
+}
+
+.form_input {
+    box-sizing: border-box;
+    height: 2.50em;
+    padding: 0 !important;
+    padding-left: 0.3em !important;
+    border: 1px solid #d9d9d9;
+    border-radius: .1875em;
+    background-color: inherit;
+    color: inherit;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.input_container {
+    width: 50%;
+    height: 45%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.main_table {
+    margin-top: 85px;
+    background-color: var(--main-users-table-background-color) !important;
+    border: 1px solid var(--main-users-table-border-color) !important;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+	height: 42px;
+	font-size: 18px;
+	font-weight: medium;
+	background-color: var(--main-users-table-background-color) !important;
+	border-bottom: 1px solid var(--main-users-table-border-color) !important;
+}
+
+.tabulator-tableholder {
+	background-color: transparent !important;
+}
+
+.tabulator-col {
+	border-right: 0 !important;
+}
+
+.tabulator-col-title {
+	padding: 4px 0;
+	margin-left: 24px;
+	color: #ffffff;
+	font-weight: 100;
+}
+
+.tabulator-cell {
+	padding-left: 25px !important;
+	font-size: 1.2em;
+	color: var(--main-users-table-font-color) !important;
+	min-height: 48px;
+	border: 0 !important;
+}
+
+.edit_button_cell {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.tabulator-row {
+	color: var(--main-users-table-font-color) !important;
+	border: 0 !important;
+}
+
+.tabulator-row-odd {
+	background-color: var(--main-users-table-row-odd-background-color) !important;
+}
+
+.tabulator-row-even {
+	background-color: var(--main-users-table-row-even-background-color) !important;
+}
+
+select .user_input {
+    background-color: var(--main-dialog-background-color) !important;
+}
+
+.nice-select {
+    color: var(--main-users-table-font-color) !important;
+    background-color: var(--main-background-color) !important;				
+}
+
+.nice-select-dropdown {
+    color: var(--main-users-table-font-color) !important;
+    background-color: var(--main-background-color) !important;			
+}
+
+.nice-select-search {
+    color: var(--main-users-table-font-color) !important;
+    background-color: var(--main-background-color) !important;	
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background-color: var(--main-background-color) !important;
+    font-size: 1.2em !important;
+}
