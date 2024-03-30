@@ -86,7 +86,7 @@ a {
 }
 
 #storages_table {
-    height: 100%;
+    height: 90%;
     max-height: 300px;
     overflow-y: hidden !important;
 }
@@ -199,6 +199,7 @@ function show_storage_list() {
         didOpen: () => {
             storage_table = new Tabulator('#storages_table', {
                 height: '100%',
+                placeholder: '<b>Loading storages...</b>',
                 layout: 'fitDataStretch',
                 selectable: false,
                 columns: [
@@ -237,7 +238,17 @@ function show_storage_list() {
                                 storages_table_data.push({open: open_button_string, storage_name: storage.name});
                             }
                             
-                            storage_table.setData(storages_table_data);
+                            if(storages_table_data.length > 0) {
+                                storage_table.setData(storages_table_data);
+                            }else{
+                                document.getElementById('storages_table').style = '';
+                                document.getElementById('storages_table').style.textAlign = 'center';
+                                document.getElementById('storages_table').style.border = '0';
+                                document.getElementById('storages_table').style.fontSize = '1em';
+                                document.getElementById('storages_table').innerText = 'No storages available :(';
+                            }
+
+
                             json_cache = storages_data;
                         }
                     }else{
