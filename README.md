@@ -26,5 +26,5 @@ Next time you search for an item just look into Quorage or scan the box to see t
 ## Usage
 - **Creating a new storage:** Enter the URL to Qorage (without a hashtag in the URL) and enter your data and click 'Save Storage'.
 - **Deleting a storage:** Click the 'Delete Storage' button.
-- **Editing a storage:** Navigate to the URL to Qorage and click on 'List' in the top left or scan the QR Code from a box and press 'Save Storage'.
+- **Editing a storage:** Navigate to Qorage and click on 'List' in the top left corner or scan the QR Code from a box and press 'Save Storage'.
 - **Printing a QR Code to label a storage:** Create or edit your storage and press the 'QR Code' button. Then click 'Print' afterwards.
